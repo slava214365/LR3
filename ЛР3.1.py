@@ -1,9 +1,7 @@
-def scan_list(list, item):
-    if find_item in items_list:
-        ind = list.index(find_item)
-    else:
-        return
-    return ind
+def scan_list(list_, item):
+    if item in items_list:
+        ind = list_.index(item)  # Не смог придумать решение с одним перебором
+        return ind
 
 
 items_list = ['яблоко', 'банан', 'апельсин', 'груша', 'киви', 'банан']
