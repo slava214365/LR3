@@ -2,7 +2,7 @@ def count_letters(text):
     new_str = list(text.lower())
     letters = {}
     for letter in new_str:
-        if letter.isalpha() != False:
+        if letter.isalpha():
             if letter in letters:
                 letters[letter] += 1
             else:
@@ -10,13 +10,10 @@ def count_letters(text):
     return letters
 
 
-
 def calculate_frequency(glossary):
-    sum = 0
+    sum_ = sum(glossary.values())
     for letter in glossary:
-        sum += glossary[letter]
-    for letter in glossary:
-        glossary[letter] /= sum
+        glossary[letter] /= sum_
         glossary[letter] = round(glossary[letter], 2)
     return glossary
 
