@@ -1,7 +1,7 @@
 def find_common_participants(first_list, second_list, delimiter_=","):
     first_list = set(first_list.split(delimiter_))
     second_list = set(second_list.split(delimiter_))
-    common_people = first_list.intersection(second_list)
+    common_people = list(first_list.intersection(second_list))
     return common_people
 
 
